@@ -75,5 +75,9 @@
             // Initialize the timer when the page loads
             updateTimer();
         </script>
+
+ <footer class="wrkctg-footer">
+            
+ </footer>
     </body>
 </html>
