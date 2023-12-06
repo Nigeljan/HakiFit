@@ -10,6 +10,140 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>HakiFit Cardio</title>
+        <style>
+            
+            * {
+                 margin: 0;
+                 padding: 0;
+                 box-sizing: border-box;
+                 font-family: Inika;
+               }
+               
+            body, h1, p, button {
+                 margin: 0;
+                 padding: 0;
+             }
+
+            /* Set the font family for the entire document */
+            body {
+              font-family: 'Inika', sans-serif;
+              background-color:#FCF5ED;
+            }
+
+            /* Apply general styling for the header */
+            .wrkctg-header {
+                background-color: #F4BF96;
+                padding: 10px; /* Add padding if needed */
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%; /* Ensure the header spans the entire width */
+                position: fixed; /* Change from static to fixed */
+                top: 0; /* Stick to the top of the viewport */
+                left: 0;
+                z-index: 1000; /* Set a higher z-index to ensure it's on top of other elements */
+            }
+
+            .wrkctg-header a {
+              color: black;
+              text-decoration: none;
+              margin: 0 10px;
+            }
+
+            /* Style the main heading */
+            .wrkctg-h1 {
+              color: black;
+              font-size: 36px;
+              text-align:center;
+              margin-top:90px
+            }
+
+            /* Style the paragraph text */
+            .wrkctg-p {
+              color: #1E1E1E;
+              font-size: 18px;
+              text-align:center;
+              margin-top:30px
+            }
+
+           
+            /* Style the workout categories container */
+            .wrkctg-div {
+              display: flex;
+              justify-content: space-evenly;
+              margin-top: 20px;
+              border-radius:10px;
+            
+            }
+
+            .wrkctg-span1 button,
+                .wrkctg-span2 button,
+                .wrkctg-span3 button {
+                    margin-top: 30px;
+                    margin-left: 20px;
+                    height: 220px;
+                    width: 300px;
+                    position: relative; /* Ensure relative positioning for absolute child */
+                }
+
+                .wrkctg-span1 img,
+                .wrkctg-span2 img,
+                 .wrkctg-span3 img {
+                        width: 100%;
+                        height: 85%;
+                        border-radius: 15px;
+                        border-style: solid;
+                        border-width: thin;
+                        position: absolute; /* Position the image absolutely within the button */
+                        top: 0;
+                        left: 0;
+                    }
+
+                .wrkctg-span1 .wrkctg-highkneesp,
+                .wrkctg-span2 .wrkctg-highkneesp,
+                .wrkctg-span3 .wrkctg-highkneesp {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    text-align: center;
+                    padding: 10px;
+                    color:black;
+                    font-family:Inika;
+                }
+            
+            /* Apply styles to the footer */
+            .wrkctg-footer {
+                background-color: #F4BF96;
+                height: 50px;
+                position: fixed; /* Change from relative or static to fixed */
+                bottom: 0;
+                left: 0;
+                width: 100%;
+            }
+
+            /* Additional styles for buttons and links */
+            button {
+              background-color: #CE5A67;
+              color: white;
+              cursor: pointer;
+              border-radius:20px;
+              border-style:solid;
+              border-width:thin;
+            }
+
+            /* Adjustments for the logout image */
+            .wrkctg-logout {
+              width: 20px;
+              height: auto;
+            }
+
+            /* Optional: Apply some spacing to the page content */
+            .wrkctg-body {
+              padding: 20px;
+            }
+        </style>   
+        
     </head>
 
     <body class="wrkctg-body">
@@ -22,8 +156,8 @@
             <a href="index.jsp"><img class="wrkctg-logout" src="Images/shutdown.png"></a>
         </header>
 
-        <h1 class="wrkctg-h1">Cardio Workout!!</h1>
-
+        <h1 class="wrkctg-h1">Cardio Workout!!</h1><br>
+        
         <p class="wrkctg-p"> Cardio exercises, short for cardiovascular exercises, are activities that elevate your heart <br>
             rate and improve the efficiency of your cardiovascular system.. Regular cardio workouts not <br>
             only enhance cardiovascular health but also aid in weight management, boost mood <br>
@@ -33,21 +167,21 @@
             <span class="wrkctg-span1">
                 <button type="submit">
                     <a href="CardioReady.jsp">
-                        <img src="Images/High Knees.jpg"  class="wrkctg-highknees">High Knees
-                    </a></button>
+                        <img src="Images/High Knees.jpg"  class="wrkctg-highknees"><p class="wrkctg-highkneesp">High Knees
+                        </p></a></button>
             </span>
 
             <span class="wrkctg-span2">
                 <button type="submit">
                     <a href="CardioReady.jsp">
-                        <img src="Images/Squat Jumps.jpg" class="wrkctg-squatjumps">Squat Jumps
+                        <img src="Images/Squat Jumps.jpg" class="wrkctg-squatjumps"><br><p class="wrkctg-highkneesp">Squat Jumps</p>
                     </a></button>
             </span>
 
             <span class="wrkctg-span3">
                 <button type="submit">
                     <a href="CardioReady.jsp">
-                        <img src="Images/Jogging.jpg" class="wrkctg-jogging">Jogging
+                        <img src="Images/Jogging.jpg" class="wrkctg-jogging"><br><p class="wrkctg-highkneesp">Jogging</p>
                     </a></button>
             </span>
         </div>
