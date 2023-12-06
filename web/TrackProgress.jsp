@@ -11,6 +11,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>HakiFit Track Progress</title>
     </head>
+
     <body class="wrkctg-body">
         <header class="wrkctg-header"> 
             <a href="HakiFit.jsp"><img class="wrkctg-hakifitlogo" src="Images/HakiFitLogo.png"/></a>
@@ -20,7 +21,9 @@
             <a href="Profile.jsp">Profile</a>
             <a href="index.jsp"><img class="wrkctg-logout" src="Images/shutdown.png"></a>
         </header>
+
         <h1 class="wrkctg-h1">Track Progress!!</h1>
+
         <p class="wrkctg-p">No matter how you performed, just make sure you do your best!!</p>
         
         <div class="wrkctg-div">
@@ -30,5 +33,9 @@
             <button type="submit" class="submit"><a href="Timer.jsp">Start Workout</a></button>
             <button type="submit" class="submit"><a href="HakiFit.jsp">Return to Main</a></button>
         </div>
+
+ <footer class="wrkctg-footer">
+            
+ </footer>
     </body>
 </html>
