@@ -14,21 +14,21 @@
             
         </style>
     </head>
-    <body>
-        <header>
-            <a href="HakiFit.jsp"><img class="hakiFitLogoHeader" src="Images/HakiFitLogo.png"/></a>
+    <body class ="wrkctg-body">
+        <header class ="wrkctg-header">
+            <a href="HakiFit.jsp"><img class="wrkctg-hakifitlogo" src="Images/HakiFitLogo.png"/></a>
             <a href="WorkoutCategories.jsp">Workouts</a>
             <a href="PersonalWorkout.jsp">Personal Workout</a>
             <a href="Nutrition.jsp">Nutrition</a>
             <a href="Profile.jsp">Profile</a>
-            <a href="index.jsp"><img class="logout" src="Images/shutdown.png"></a>
+            <a href="index.jsp"><img class="wrkctg-logout" src="Images/shutdown.png"></a>
         </header>
         <h1>Nutrition</h1>
         <p>Meal Plans or Recipes?</p>
         
-        <div>
-            <span class="mealPlan"><button type="submit"><a href="Recipe.jsp"><img src="Images/Meal Plan.jpg">Meal Plans</a></button></span>
-            <span class="recipe"><button type="submit"><a href="Recipe.jsp"><button type="submit"><img src="Images/Recipe.jpg">Recipes</a></button></span>
+        <div class ="wrkctg-div">
+            <span class ="wrkctg-span1"><button type="submit"><a href="Recipe.jsp"><img class="wrkctg-mealplan" src="Images/Meal Plan.jpg">Meal Plans</a></button></span>
+            <span class ="wrkctg-span2"><button type="submit"><a href="Recipe.jsp"><button type="submit"><img  class="wrkctg-recipe" src="Images/Recipe.jpg">Recipes</a></button></span>
         </div>
     </body>
 </html>
