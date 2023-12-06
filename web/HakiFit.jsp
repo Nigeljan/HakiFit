@@ -22,7 +22,7 @@
             <a href="index.jsp"><img class="wrkctg-logout" src="Images/shutdown.png"></a>
         </header>
         <h1 class="wrkctg-h1">
-            This is <img class="wrkctg-hakifitlogo" src="Images/HakiFitLogo.png"/>
+            This is <img class="wrkctg-hakifitlogo2" src="Images/HakiFitLogo.png"/>
         </h1>
         <p class="wrkctg-p">
             An online playground where enjoyment and fitness <br>
