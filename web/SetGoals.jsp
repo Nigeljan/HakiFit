@@ -39,6 +39,7 @@
           
         </style>
     </head>
+
     <body class="wrkctg-body">
          <header class="wrkctg-header">
             <a href="HakiFit.jsp"><img class="wrkctg-hakifitlogo" src="Images/HakiFitLogo.png"/></
@@ -68,5 +69,8 @@
                 <p class="wrkctg-input">agheth</p>
             </div>
         </div>
+ <footer class="wrkctg-footer">
+            
+ </footer>
     </body>
 </html>
