@@ -28,8 +28,8 @@
         
         <div class="wrkctg-div">
             <p class="wrkctg-p">Number of Reps: </p>
-            <p class="wrkctg-p>Minutes Spent: </p>
-            <p class="wrkctg-p>Number of Breaks: </p><br>
+            <p class="wrkctg-p">Minutes Spent: </p>
+            <p class="wrkctg-p">Number of Breaks: </p><br>
             <button type="submit" class="submit"><a href="Timer.jsp">Start Workout</a></button>
             <button type="submit" class="submit"><a href="HakiFit.jsp">Return to Main</a></button>
         </div>
