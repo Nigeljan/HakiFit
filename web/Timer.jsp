@@ -11,24 +11,24 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>HakiFit Timer</title>
     </head>
-    <body>
-        <header>
-            <a href="HakiFit.jsp"><img class="hakiFitLogoHeader" src="Images/HakiFitLogo.png"/></a>
+    <body class="wrkctg-body">
+        <header class="wrkctg-header">
+            <a href="HakiFit.jsp"><img class="wrkctg-hakifitlogo" src="Images/HakiFitLogo.png"/></a>
         </header>
-        <h1 id="timer">1:00</h1>
-        <h3>Stay Focus and Keep Grinding!!!</h3>
+        <h1 id="timer" class="wrkctg-h1">1:00</h1>
+        <h3 class="wrkctg-h3">Stay Focus and Keep Grinding!!!</h3>
         
         <button onclick="startTimer()">Start</button>
         
         <a href="Pause.jsp" onclick="pauseTimer()">
-            <img src="Images/Pause Button.png"/>
+            <img src="Images/Pause Button.png" class="wrkctg-pausebutton"/>
         </a>
        
         <a href="TrackProgress.jsp" onclick="stopTimer()">
-            <img src="Images/Stop Button.png"/>
+            <img src="Images/Stop Button.png" class="wrkctg-stopbutton"/>
         </a>
 
-        <script>
+        <script class="wrkctg-script">
             // Retrieve the remaining time from the URL
             var urlParams = new URLSearchParams(window.location.search);
             var remainingTime = urlParams.get('remainingTime');
