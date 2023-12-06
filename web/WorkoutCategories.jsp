@@ -26,9 +26,28 @@
         <p class="wrkctg-p">Please select a workout!!</p>
         
         <div class="wrkctg-div">
-            <span class="wrkctg-span1"><button type="submit"><a href="Cardio.jsp"><img src="Images/Cardio.jpg" class="wrkctg-cardio">Cardio</a></button></div>
-            <span class="wrkctg-span2"><button type="submit"><a href="StrengthTraining.jsp"><button type="submit"><img src="Images/Strength_Training.jpg" class="wrkctg-strengthtraining">Strength Training</a></button></div>
-            <span class="wrkctg-span3"><button type="submit"><a href="Yoga.jsp"><button type="submit"><img src="Images/Yoga.jpg" class="wrkctg-yoga">Yoga</a></button></div>     
+            <span class="wrkctg-span1">
+                <button type="submit">
+                    <a href="Cardio.jsp">
+                        <img src="Images/Cardio.jpg" class="wrkctg-cardio">Cardio
+                    </a></button>
+            </span>
+
+            <span class="wrkctg-span2">
+                <button type="submit">
+                    <a href="StrengthTraining.jsp">
+                        <button type="submit">
+                            <img src="Images/Strength_Training.jpg" class="wrkctg-strengthtraining">Strength Training
+                    </a></button>
+            </span>
+
+            <span class="wrkctg-span3">
+                <button type="submit">
+                    <a href="Yoga.jsp">
+                        <button type="submit">
+                            <img src="Images/Yoga.jpg" class="wrkctg-yoga">Yoga
+                    </a></button>
+            </span>     
         </div>
         
         <footer class="wrkctg-footer">
