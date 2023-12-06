@@ -30,6 +30,7 @@
             }
         </style>
     </head>
+
     <body class="wrkctg-body">
         <header class="wrkctg-header">
             <a href="HakiFit.jsp"><img class="wrkctg-hakifitlogo" src="Images/HakiFitLogo.png"/></a>
@@ -39,7 +40,9 @@
             <a href="Profile.jsp">Profile</a>
             <a href="index.jsp"><img class="wrkctg-logout" src="Images/shutdown.png"></a>
         </header>
+
         <h1 class="wrkctg-h1">Recipes!!</h1>
+
          <div class="wrkctg-div1">
             <p class="wrkctg-p">Lagay ng picture ng pagkain</p>
             <p class="wrkctg-p">and name ng recipe dito</p>
@@ -67,5 +70,9 @@
         <div class="wrkctg-otherrecipes3">  
         
         </div>
+
+ <footer class="wrkctg-footer">
+            
+ </footer>
     </body>
 </html>
