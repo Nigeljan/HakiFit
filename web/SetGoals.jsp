@@ -11,7 +11,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>HakiFit Goals!!</title>
         <style>
-           .setGoals {
+           .wrkctg-setgoals {
             width: 20%;
             margin: auto;
             min-height: 100px; /* Set a fixed height for the firstGoal section */
@@ -21,7 +21,7 @@
             left:100px;
             background-color:#F4BF96;
            }
-            .goalHistory{
+            .wrkctg-goalhistory{
                 width: 20%;
                 margin: auto;
                 min-height: 100px; /* Set a fixed height for the firstGoal section */
@@ -31,39 +31,41 @@
                 background-color:#F4BF96;
             }
             
-            .input{
+            .wrkctg-input{
                 background-color:#CE5A67;
-                 border: 1px solid black; 
+                border: 1px solid black; 
             }
         
           
         </style>
     </head>
-    <body>
-         <header>
-            <a href="HakiFit.jsp"><img class="hakiFitLogoHeader" src="Images/HakiFitLogo.png"/></
+    <body class="wrkctg-body">
+         <header class="wrkctg-header">
+            <a href="HakiFit.jsp"><img class="wrkctg-hakifitlogo" src="Images/HakiFitLogo.png"/></
             <a href="WorkoutCategories.jsp">Workouts</a>
             <a href="PersonalWorkout.jsp">Personal Workout</a>
             <a href="Nutrition.jsp">Nutrition</a>
             <a href="Profile.jsp">Profile</a>
-            <a href="index.jsp"><img class="logout" src="Images/shutdown.png"></a>
+            <a href="index.jsp"><img class="wrkctg-logout" src="Images/shutdown.png"></a>
         </header>
-        <h1>Set Goals!</h1>
         
-        <div class="firstGoal">
-            <p>Set Goals!!</p>
-            <div class="setGoals">
-                <textarea class="input"></textarea><br>
-                <textarea class="input"></textarea><br>
-                <textarea class="input"></textarea><br>
-                <textarea class="input"></textarea><br>
-                <textarea class="input"></textarea><br>
+       <h1 class="wrkctg-h1">Set Goals!</h1>
+        
+        <div class="wrkctg-div1">
+            <p class="wrkctg-p1">Set Goals!!</p>
+            <div class="wrkctg-setgoals">
+                <textarea class="wrkctg-input"></textarea><br>
+                <textarea class="wrkctg-input"></textarea><br>
+                <textarea class="wrkctg-input"></textarea><br>
+                <textarea class="wrkctg-input"></textarea><br>
+                <textarea class="wrkctg-input"></textarea><br>
             </div>
         </div>
-        <div class="secondGoal">
-            <p>Goal History!!</p>
-            <div class="goalHistory">
-                <p class="input">agheth</p>
+
+        <div class="wrkctg-div2">
+            <p class="wrkctg-p2">Goal History!!</p>
+            <div class="wrkctg-goalhistory">
+                <p class="wrkctg-input">agheth</p>
             </div>
         </div>
     </body>
