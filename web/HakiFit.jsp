@@ -40,7 +40,7 @@
         <img class="wrkctg-history" src="Images/History.png" alt="history"/>
         <img class="wrkctg-postworkout" src="Images/postWorkout.png" alt="postworkout"/>
         
-        <footer>
+        <footer class="wrkctg-footer">
             
         </footer>
     </body>
