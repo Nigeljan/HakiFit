@@ -183,7 +183,7 @@
             <span class="wrkctg-span1">
                 <button type="submit">
                     <a href="Post-WorkoutFeedback.jsp">
-                        <img src="Images/Metrics.png"  class="wrkctg-highknees"><p class="wrkctg-highkneesp">View Metrics
+                        <img src="Images/View Metrics.png"  class="wrkctg-highknees"><p class="wrkctg-highkneesp">View Metrics
                         </p></a></button>
             </span>
 
