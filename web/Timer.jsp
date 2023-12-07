@@ -1,9 +1,3 @@
-<%-- 
-    Document   : Timer
-    Created on : 12 3, 23, 10:00:35 AM
-    Author     : Nigel Jan Naniong
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -44,7 +38,81 @@
               text-decoration: none;
               margin: 0 10px;
             }
+            
+            .wrkctg-h1{
+                overflow: hidden;
+                position: relative;
+                width: 805px;
+                height: 261px;
+                margin: 0 auto;
+                font-family: Inika, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+                "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+                "Source Han Sans CN",sans-serif;
+                color: rgb(30, 30, 30);
+                font-size: 200px;
+                font-weight: 400;
+                line-height: 260.6px;
+                text-align:center;
+                margin-top:30px;
+            }
+            
+            .wrkctg-h3{
+                position: relative;
+                width: 1079px;
+                height: 100px;
+                margin: 0 auto;
+                font-family: Inika, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+                "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+                "Source Han Sans CN", sans-serif;
+                color: rgb(30, 30, 30);
+                font-size: 50px;
+                font-weight: 400;
+                line-height: 91.21px;
+                overflow: hidden;
+                text-align:center;
+               
+            }
+            
+           .wrkctg-div {
+                display: flex; /* Use flex container to align items in a row */
+                justify-content: center; /* Adjust as needed for spacing between images */
+                align-items: center; /* Center items vertically */
+                width: 100%; /* Adjust the width as needed */
+              }
 
+              .wrkctg-stopbutton,
+              .wrkctg-pausebutton{
+                width: 208px;
+                height: 188px;
+                background: center;
+                background-size: cover;
+                margin: 0 auto; /* Adjust as needed for spacing between images */
+              }
+              
+              .wrkctg-stopbutton{
+                  margin-left:25px;
+                  height:100%;
+              }
+              
+              .wrkctg-pausebutton{
+                  margin-right:25px;
+              }
+              
+              button{
+                  position: relative;
+                  width: 100px;
+                  height: 55px;
+                  margin: -30px 0px 50px 670px;
+                  background: rgb(206, 90, 103);
+                  border: 3px solid rgb(0, 0, 0);
+                  border-radius: 20px;
+                  overflow: hidden;
+                  box-sizing: border-box;
+                  cursor: pointer;
+              }
+             
         /* Apply styles to the footer */
             .wrkctg-footer {
                 background-color: #F4BF96;
@@ -75,8 +143,9 @@
         <h1 id="timer" class="wrkctg-h1">1:00</h1>
         <h3 class="wrkctg-h3">Stay Focus and Keep Grinding!!!</h3>
         
-        <button onclick="startTimer()">Start</button>
         
+        
+       <div class="wrkctg-div"> 
         <a href="Pause.jsp" onclick="pauseTimer()">
             <img src="Images/Pause Button.png" class="wrkctg-pausebutton"/>
         </a>
@@ -84,6 +153,9 @@
         <a href="TrackProgress.jsp" onclick="stopTimer()">
             <img src="Images/Stop Button.png" class="wrkctg-stopbutton"/>
         </a>
+       </div>
+        
+        <button onclick="startTimer()">Start</button>
 
         <script class="wrkctg-script">
             // Retrieve the remaining time from the URL
