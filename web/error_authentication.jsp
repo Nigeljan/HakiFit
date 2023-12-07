@@ -128,7 +128,7 @@ main {
                 <div class="button-container">
                         <div class="logo-container">   
                             <h1>User authentication failed</h1>
-                            <p>Wrong username/password  Or  session expired.</p>
+                            <p>Wrong username/password Or session expired.</p>
                         </div>
                 </div>
                 <div class="animated-images">
