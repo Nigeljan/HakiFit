@@ -86,11 +86,16 @@
                     position: relative; /* Ensure relative positioning for absolute child */
                 }
 
+            .wrkctg-span1 button{
+                    height: 225px;
+                    width: 300px;
+                }
+                
                 .wrkctg-span1 img,
                 .wrkctg-span2 img,
                  .wrkctg-span3 img {
                         width: 100%;
-                        height: 85%;
+                        height: 100%;
                         border-radius: 15px;
                         border-style: solid;
                         border-width: thin;
@@ -110,6 +115,20 @@
                     padding: 10px;
                     color:black;
                     font-family:Inika;
+                    overflow: hidden;
+                    position: relative;
+                    width: 300px;
+                    height: 15%;
+                    margin-top:170px;
+                    padding-bottom:30px;
+                    background: rgb(206, 90, 103);
+                    border: 3px solid rgb(0, 0, 0);
+                    border-radius: 30px;
+                    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25)
+                }
+                
+                .wrkctg-span1 .wrkctg-highkneesp{
+                    margin-top:180px;
                 }
             
             /* Apply styles to the footer */
@@ -142,6 +161,7 @@
             .wrkctg-body {
               padding: 20px;
             }
+            
         </style>   
         
     </head>
