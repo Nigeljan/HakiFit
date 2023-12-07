@@ -88,14 +88,6 @@ main {
     z-index: 10;
 }
 
-.top-left-logo {
-    position: absolute;
-    top: -30px;
-    left: -30px;
-    width: 60px; /* Adjust the width as needed */
-    height: auto;
-}
-
 /* Animated Images */
 .animated-images {
     display: flex;
@@ -175,18 +167,18 @@ main {
 }
 
 .rectangle-1 .top-logo {
-    top: -50px;
+    top: -100px;
     left: 50%; 
     transform: translateX(-50%); 
-    width: 100px;
-    height: auto;
+    width: auto;
+    height: 50px;
 }
 
 .rectangle-1 h1 {
-    font-size: 24px; /* Adjust font size as needed */
-    color: #000; /* Set a specific color for better visibility */
-    margin: 0; /* Reset margin */
-    top: -80px; 
+    font-size: 24px;
+    color: #000; 
+    margin: 0; 
+    top: -50px; 
     left: 50%; 
     transform: translateX(-50%); 
     white-space: nowrap;
