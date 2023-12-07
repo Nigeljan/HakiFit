@@ -1,9 +1,3 @@
-<%-- 
-    Document   : TrackProgress
-    Created on : 12 3, 23, 9:34:53 AM
-    Author     : Nigel Jan Naniong
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -44,7 +38,88 @@
               text-decoration: none;
               margin: 0 10px;
             }
-
+            
+            .wrkctg-h1{
+                overflow: hidden;
+                position: relative;
+                width: 400px;
+                height: 220px;
+                margin: 0 auto;
+                font-family: Inika, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+                "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+                "Source Han Sans CN",sans-serif;
+                color: rgb(30, 30, 30);
+                font-size: 55px;
+                font-weight: 400;
+                line-height: 260.6px;
+                text-align:center;
+                margin-top:30px;
+            }
+            
+            .wrkctg-h3{
+                position: relative;
+                width: 900px;
+                height: 80px;
+                margin: 0 auto;
+                font-family: Inika, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+                "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+                "Source Han Sans CN", sans-serif;
+                color: rgb(30, 30, 30);
+                font-size: 30px;
+                font-weight: 400;
+                line-height: 91.21px;
+                overflow: hidden;
+                text-align:center;
+               
+            }
+            
+            .wrkctg-div{
+                position: relative;
+                width: 1221px;
+                height: 280px;
+                margin: 0 auto;
+                background: rgb(244, 191, 150);
+                border: 3px solid rgb(0, 0, 0);
+                border-radius: 30px;
+                box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+                overflow: hidden;
+            }
+            
+            .wrkctg-p{
+                 position: relative;
+                width: 400px;
+                height: 70px;
+                margin: 0 auto;
+                font-family: Inika, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                  Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+                  "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+                  "Source Han Sans CN", sans-serif;
+                color: rgb(30, 30, 30);
+                font-size: 30px;
+                font-weight: 400;
+                line-height: 65.15px;
+                overflow: hidden;
+            }
+            
+            .wrkctg-submit1, .wrkctg-submit2{
+                display: inline-block; /* Make the buttons inline */
+                width: 120px;
+                height: 45px;
+                background: rgb(206, 90, 103);
+                border: 3px solid rgb(0, 0, 0);
+                border-radius: 30px;
+                box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+                margin: -30px 0px 50px 400px; /* Adjust as needed for spacing between buttons */
+               justify-content:center;
+               color:black;
+            }
+            
+            .wrkctg-submit2{
+                margin-left:20px;
+            }
+            
         /* Apply styles to the footer */
             .wrkctg-footer {
                 background-color: #F4BF96;
@@ -81,14 +156,16 @@
 
         <h1 class="wrkctg-h1">Track Progress!!</h1>
 
-        <p class="wrkctg-p">No matter how you performed, just make sure you do your best!!</p>
+        <h3 class="wrkctg-h3">No matter how you performed, just make sure you do your best!!</h3>
         
         <div class="wrkctg-div">
             <p class="wrkctg-p">Number of Reps: </p>
             <p class="wrkctg-p">Minutes Spent: </p>
             <p class="wrkctg-p">Number of Breaks: </p><br>
-            <button type="submit" class="submit"><a href="Timer.jsp">Start Workout</a></button>
-            <button type="submit" class="submit"><a href="HakiFit.jsp">Return to Main</a></button>
+          
+                <button type="submit" class="wrkctg-submit1"><a href="Timer.jsp">Start Workout</a></button>
+                <button type="submit" class="wrkctg-submit2"><a href="HakiFit.jsp">Return to Main</a></button>
+            
         </div>
 
  <footer class="wrkctg-footer">
@@ -96,4 +173,3 @@
  </footer>
     </body>
 </html>
-
