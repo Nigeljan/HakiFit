@@ -114,7 +114,7 @@
               "Source Han Sans CN", sans-serif;
             color: #1e1e1e;
             font-size: 25px;
-            font-weight: 400;
+            font-weight: 600;
             line-height: 65.15px;
             text-align:left; 
          }
@@ -175,18 +175,6 @@
          }
 </style>
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
-<%
-    response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
-    
-    response.setHeader("Pragma", "no-cache");
-    
-    response.setHeader("Expires", "0");
-    
-    if(session.getAttribute("username")==null && session.getAttribute("password")==null)
-    {
-        response.sendRedirect("HakiFit_Login.jsp");
-    }
-%>
 <!DOCTYPE html>
 <html>
 <head>
