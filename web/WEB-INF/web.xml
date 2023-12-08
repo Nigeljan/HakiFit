@@ -16,22 +16,62 @@
     <servlet>
         <servlet-name>CategorySelection</servlet-name>
         <servlet-class>servlet.process.HakiFitCategorySelection</servlet-class>
+        <init-param>
+            <param-name>cardio</param-name>
+            <param-value>cardio</param-value>
+        </init-param>
+        <init-param>
+            <param-name>strengthTraining</param-name>
+            <param-value>strengthTraining</param-value>
+        </init-param>
+        <init-param>
+            <param-name>yoga</param-name>
+            <param-value>yoga</param-value>
+        </init-param>
     </servlet>
     <servlet>
         <servlet-name>ExerciseSelection</servlet-name>
         <servlet-class>servlet.process.HakiFitExerciseSelection</servlet-class>
+        <init-param>
+            <param-name>c_highKnees</param-name>
+            <param-value>c_highKnees</param-value>
+        </init-param>
+        <init-param>
+            <param-name>c_squatJumps</param-name>
+            <param-value>c_squatJumps</param-value>
+        </init-param>
+        <init-param>
+            <param-name>c_jogging</param-name>
+            <param-value>c_jogging</param-value>
+        </init-param>
+        <init-param>
+            <param-name>st_squats</param-name>
+            <param-value>st_squats</param-value>
+        </init-param>
+        <init-param>
+            <param-name>st_bicepCurls</param-name>
+            <param-value>st_bicepCurls</param-value>
+        </init-param>
+        <init-param>
+            <param-name>st_pushUp</param-name>
+            <param-value>st_pushUp</param-value>
+        </init-param>
+        <init-param>
+            <param-name>yg_yoga</param-name>
+            <param-value>yg_yoga</param-value>
+        </init-param>
     </servlet>
     <servlet>
         <servlet-name>ProgressTracking</servlet-name>
         <servlet-class>servlet.process.HakiFitProgressTracking</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>Timer</servlet-name>
-        <servlet-class>servlet.timer.HakiFitTimer</servlet-class>
-    </servlet>
-    <servlet>
         <servlet-name>Logout</servlet-name>
         <servlet-class>servlet.process.HakiFitLogout</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Ready</servlet-name>
+        <servlet-class>servlet.process.HakiFitReady</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>UserConfig</servlet-name>
@@ -58,12 +98,12 @@
         <url-pattern>/ProgressTracking</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>Timer</servlet-name>
-        <url-pattern>/Timer</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
         <servlet-name>Logout</servlet-name>
         <url-pattern>/Logout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Ready</servlet-name>
+        <url-pattern>/Ready</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
