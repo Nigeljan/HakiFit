@@ -127,6 +127,18 @@ body {
 }
 </style>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%
+    response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
+    
+    response.setHeader("Pragma", "no-cache");
+    
+    response.setHeader("Expires", "0");
+    
+    if(session.getAttribute("username")==null && session.getAttribute("password")==null)
+    {
+        response.sendRedirect("HakiFit_Login");
+    }
+%>
 <!DOCTYPE html>
 <html>
     <head>
