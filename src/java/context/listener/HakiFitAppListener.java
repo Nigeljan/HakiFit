@@ -6,16 +6,18 @@ package context.listener;
 
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
+import javax.servlet.annotation.WebListener;
 
 public class HakiFitAppListener implements ServletContextListener {
 
     @Override
     public void contextInitialized(ServletContextEvent sce) {
-        // Perform actions on context initialization
+        System.out.println("Servlet context initialized.");
     }
 
     @Override
     public void contextDestroyed(ServletContextEvent sce) {
         // Perform actions on context destruction
+        System.out.println("Servlet context destroyed.");
     }
 }
