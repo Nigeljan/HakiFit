@@ -68,11 +68,11 @@
     </listener>
     <context-param>
         <param-name>headerValue</param-name>
-        <param-value>Your header content here</param-value>
+        <param-value>Images/HakiFitLogo.png</param-value>
     </context-param>
     <context-param>
         <param-name>footerValue</param-name>
-        <param-value>Your footer content here</param-value>
+        <param-value>ICS 2608 / 2CSE / MP4 / ALVEAR, MARK JOSH  / NANIONG, NIGEL JAN / VALLES, JAMES VINCENT </param-value>
     </context-param>
     <!-- error pages -->
     <error-page>
