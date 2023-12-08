@@ -14,6 +14,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 public class HakiFitUserConfig extends HttpServlet {
 
@@ -34,10 +35,11 @@ public class HakiFitUserConfig extends HttpServlet {
             String username = request.getParameter("username");
             String password = request.getParameter("password");
             
-            boolean isValidUser = false;
-            
             try{
                 if(usernameInit.equals(username) && passwordInit.equals(password)){
+                    HttpSession session = request.getSession();
+                    session.setAttribute("username",username);
+                    session.setAttribute("password",password);
                     response.sendRedirect("HakiFit_MainPage.jsp");
                 }
                 
