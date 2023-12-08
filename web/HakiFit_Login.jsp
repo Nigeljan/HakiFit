@@ -269,7 +269,7 @@ main {
         <header>
             <div class="orange-rectangles">
                 <!-- Top and bottom orange rectangles -->
-                <img src="Images/HakiFitLogo.png" alt="Your Logo" class="logo">
+                <img src="${initParam.headerValue}" alt="Your Logo" class="logo">
             </div>
         </header>
         <main>
@@ -309,6 +309,7 @@ main {
         <footer>
             <div class="orange-rectangles">
                 <!-- Top and bottom orange rectangles -->
+                ${initParam.footerValue}
             </div>
         </footer>
     </div>
