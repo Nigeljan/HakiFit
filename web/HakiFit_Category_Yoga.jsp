@@ -42,6 +42,22 @@ body {
   margin: 0 10px;
 }
 
+.wrkctg-header button {
+    width: 100%;
+    height: 40px;
+    color: #000;
+    border-radius: 10px;
+    border: 3px solid #000;
+    background: #FCF5ED;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.wrkctg-header button:hover {
+    background-color: #CE5A67;
+}
+
 /* Style the main heading */
 .wrkctg-h1 {
   color: black;
@@ -152,6 +168,18 @@ button {
 }
 </style>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%
+    response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
+    
+    response.setHeader("Pragma", "no-cache");
+    
+    response.setHeader("Expires", "0");
+    
+    if(session.getAttribute("username")==null && session.getAttribute("password")==null)
+    {
+        response.sendRedirect("HakiFit_Login");
+    }
+%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -166,7 +194,7 @@ button {
             <a href="HakiFit_WorkoutCategories.jsp">Workouts</a>
             <a href="HakiFit_Nutrients_List.jsp">Nutrition</a>
             <a href="HakiFit_Profile.jsp">Profile</a>
-            <a href="HakiFit_Login.jsp"><img class="wrkctg-logout" src="Images/shutdown.png"></a>
+            <form action="Logout"><button type="submit"><img class="wrkctg-logout" src="Images/shutdown.png"></button></form>
         </header>
 
         <h1 class="wrkctg-h1">Yoga Workout!!</h1><br>
