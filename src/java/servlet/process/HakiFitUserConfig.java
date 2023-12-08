@@ -4,6 +4,8 @@
  */
 package servlet.process;
 
+import error.AuthenticationException;
+import error.NullValueException;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.RequestDispatcher;
@@ -29,46 +31,33 @@ public class HakiFitUserConfig extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
             String username = request.getParameter("username");
             String password = request.getParameter("password");
-
-            String errorUser = "";
-            String errorPass = "";
-            String errorLogin = "";
-
+            
             boolean isValidUser = false;
             
-            //logic if login input is correct or not
-            if(usernameInit.equals(username) && passwordInit.equals(password)){
-                isValidUser = true;
-            }else{
-                if(!usernameInit.equals(username)){
-                    errorUser = "Username Incorrect";
-                    errorLogin = errorUser;
-                }else{
-                    errorUser = "";
+            try{
+                if(usernameInit.equals(username) && passwordInit.equals(password)){
+                    response.sendRedirect("HakiFit_MainPage.jsp");
                 }
-                if(!passwordInit.equals(password)){
-                    errorPass = "Password Incorrect";
-                    errorLogin = errorPass;
-                }else{
-                    errorPass = "";
+                
+                if (username == null || username.isEmpty() || password == null || password.isEmpty()) {
+                    throw new NullValueException("Username or password is null");
                 }
-                if(!usernameInit.equals(username) && !passwordInit.equals(password)){
-                    errorLogin = errorUser + " and " + errorPass;
+                
+                if (!usernameInit.equals(username) || !passwordInit.equals(password)) {
+                    throw new AuthenticationException("Invalid username or password");
                 }
-            }
-            
-            if (isValidUser) {
-                // If login is successful, redirect to success.jsp
-                response.sendRedirect("HakiFit_MainPage.jsp");
-            } else {
-                // If login fails, redirect back to error.jsp
-                request.setAttribute("ErrorMessage", errorLogin);
+                
+            } catch(NullValueException e){   
+                request.setAttribute("errorMessage", e.getMessage());
+                RequestDispatcher dispatcher = request.getRequestDispatcher("error_nullvalue.jsp");
+                dispatcher.forward(request, response);
+            } catch(AuthenticationException e){   
+                request.setAttribute("errorMessage", e.getMessage());
                 RequestDispatcher dispatcher = request.getRequestDispatcher("error_authentication.jsp");
                 dispatcher.forward(request, response);
-            }
+            } 
         }
     }
 
