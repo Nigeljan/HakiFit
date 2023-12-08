@@ -10,6 +10,8 @@
 body {
     font-family: 'Inika', sans-serif;
     background-color: #FCF5ED;
+    overflow: hidden; /* Prevent scrolling */
+
 }
 
 /* Apply general styling for the header */
@@ -111,43 +113,62 @@ body {
     text-align: center;
     font-family: Inika;
     color: black;
-    padding: 10px;
+    padding: 20px;
+    margin-top: 20px; /* Adjust the margin-top value as needed */
 }
 
-.wrkctg-box-container {
-    display: flex;
-    justify-content: center;
-}
-
-.wrkctg-box {
-    width: 865px;
-    height: 365px;
+.wrkctg-box-1 {
     background-color: #F4BF96;
-    margin: 10px;
-    display: inline-block;
-    justify-content: center;
-    text-align: center;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border: 1px solid rgb(245, 217, 217);
+    width: 630px;
+    height: 295px;
+    margin: auto;
+    min-height: 100px;
+    border: 2px solid black; /* Added black border */
     border-radius: 10px;
-    border: 2px solid #000;
+    padding: 5px;
+    right: 360px; /* Added 'px' to the right property */
+    position: relative;
+}
+
+.wrkctg-box-2 {
+    background-color: #F4BF96;
+    border: 2px solid black; /* Added black border */
+    width: 637px;
+    height: 295px;
+    margin: auto;
+    min-height: 100px;
+    border-radius: 10px;
+    padding: 10px;
+    left: 370px; /* Added 'px' to the left property */
+    top: -295px;
+    position: relative;
 }
 
 .wrkctg-rectangle {
-    width: 1750px;
-    height: 200px;
+    position: relative;
+    top: -278px;
     background-color: #F4BF96;
-    margin: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border: 2px solid black; /* Added black border */
+    width: 600%;
+    margin: auto;
+    min-height: 118px;
     border-radius: 10px;
-    /* Add border-radius for a subtle curve */
-    border: 2px solid #000;
-    /* Add a black border to the border-radius */
+    padding: 10px;
+    max-width: 1280px; /* Changed 'width' to 'max-width' */
 }
+
+p {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Inika;
+    color: black;
+    text-align: center;
+    margin-bottom: 20px; /* Adjust the margin-bottom value as needed */
+}
+
+
+
 </style>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%
@@ -181,12 +202,12 @@ body {
     </header>
 
     <h1 class="wrkctg-h1">Metrics</h1>
-    <div class="wrkctg-box">
+    <div class="wrkctg-box-1">
         <p>Average Number of Exercise per Day: </p>
         <p>Average Time per Day</p>
     </div>
 
-    <div class="wrkctg-box">
+    <div class="wrkctg-box-2">
         <p>Frequent Category You chose:</p>
         <p>Frequent Excercise you do:</p>
     </div>
