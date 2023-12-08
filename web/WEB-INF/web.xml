@@ -29,6 +29,10 @@
         <servlet-name>Timer</servlet-name>
         <servlet-class>servlet.timer.HakiFitTimer</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Logout</servlet-name>
+        <servlet-class>servlet.process.HakiFitLogout</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>UserConfig</servlet-name>
         <url-pattern>/UserConfig</url-pattern>
@@ -56,6 +60,10 @@
     <servlet-mapping>
         <servlet-name>Timer</servlet-name>
         <url-pattern>/Timer</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Logout</servlet-name>
+        <url-pattern>/Logout</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
