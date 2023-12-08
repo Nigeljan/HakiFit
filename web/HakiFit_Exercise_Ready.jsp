@@ -13,6 +13,7 @@
     margin: 0 auto;
     position: relative;
     overflow: hidden;
+     
 }
 
 .container_center {
@@ -21,6 +22,7 @@
     align-items: center;
     height: 100vh;
     position: relative;
+   
 }
 
 h1 {
@@ -40,10 +42,12 @@ header {
 
 /* Footer Styles */
 footer {
-    background-color: rgba(244, 191, 150, 0.93); /* Change the color of rectangles */
-    width: 100%;
-    position: absolute;
-    bottom: 0;
+   background-color: #F4BF96;
+                height: 50px;
+                position: fixed; /* Change from relative or static to fixed */
+                bottom: 0;
+                left: 0;
+                width: 100%;
 }
 
 /* Main Styles */
@@ -57,13 +61,15 @@ main {
 }
 
 .logo {
-    width: 100px; /* Adjust the width as needed */
+    width: 200px; /* Adjust the width as needed */
     height: auto;
 }
 
 .button-container {
     text-align: center;
     position: relative;
+    
+    
 }
 
 /* Animated Images */
@@ -102,6 +108,20 @@ main {
         transform: translateY(-10px) rotate(45deg);
     }
 }
+
+    h1{
+          text-align:center; 
+          top:120px;
+          font-size:50px;
+    }
+    
+    .ready{
+        border-radius:30px;
+        overflow: hidden;
+        background-color: #CE5A67;
+    }
+    
+
 </style>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -110,7 +130,7 @@ main {
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>error_404</title>
+        <title>Are you Ready??</title>
     </head>
     <body>
     <div class="container">
@@ -120,17 +140,20 @@ main {
                 <img src="Images/HakiFitLogo.png" alt="Your Logo" class="logo">
             </div>
         </header>
+        
+        
         <main>
+         <h1>Are you Ready??</h1>
             <div class="container_center">
                 <div class="animated-images">
                     <img src="Images/dumbell.png" alt="Image 1" class="left-animated-image">
                 </div>  
                 <div class="button-container">
                         <div class="logo-container">   
-                            <button type="submit">
+                            <button type="submit" class="ready">
                                 <a href="HakiFit_Exercise_Timer.jsp">
                                     <img src="Images/Squats.jpg">
-                                    <p>READY?</p>
+                                    <p>READY!!</p>
                                 </a>
                             </button>
                         </div>
@@ -140,7 +163,7 @@ main {
                 </div>
             </div>
         </main>
-        <footer>
+        <footer class="">
             <div class="orange-rectangles">
                 <!-- Top and bottom orange rectangles -->
             </div>
