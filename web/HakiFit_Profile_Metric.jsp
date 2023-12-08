@@ -114,7 +114,7 @@
         text-align: center;
         font-family: Inika;
         color: black;
-        padding: 20px;
+        padding: 5%;
         margin-top: 20px;
     }
 
