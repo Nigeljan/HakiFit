@@ -9,6 +9,12 @@
         flex-direction: column;
         align-items: center;
     }
+    
+    .orange-rectangles {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+    }
 
     .wrkctg-left {
         position: relative;
@@ -77,23 +83,22 @@ body {
 
 /* Apply styles to the footer */
 .wrkctg-footer {
-    background-color: #F4BF96;
-    height: 50px;
-    position: fixed; /* Change from relative or static to fixed */
-    bottom: 0;
-    left: 0;
+    background-color: rgba(244, 191, 150, 0.93); /* Change the color of rectangles */
     width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.orange-rectangles {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
 }
 
 /* Adjustments for the logout image */
 .wrkctg-logout {
     width: 20px;
     height: auto;
-}
-
-/* Optional: Apply some spacing to the page content */
-.wrkctg-body {
-    padding: 20px;
 }
             
 .wrkctg-content {
@@ -190,7 +195,7 @@ body {
     </head>
     <body class="wrkctg-body">
         <header class="wrkctg-header">
-            <a href="HakiFit_MainPage.jsp"><img class="wrkctg-hakifitlogo" src="Images/HakiFitLogo.png"/></a>
+            <a href="HakiFit_MainPage.jsp"><img class="wrkctg-hakifitlogo" src="${initParam.headerValue}"/></a>
             <a href="HakiFit_WorkoutCategories.jsp">Workouts</a>
             <a href="HakiFit_Nutrients_List.jsp">Nutrition</a>
             <a href="HakiFit_Profile.jsp">Profile</a>
@@ -221,7 +226,10 @@ body {
         </div>
         
         <footer class="wrkctg-footer">
-            
+            <div class="orange-rectangles">
+                <!-- Top and bottom orange rectangles -->
+                ${initParam.footerValue}
+            </div>
         </footer>
     </body>
 </html>
