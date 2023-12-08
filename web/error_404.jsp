@@ -39,11 +39,17 @@ header {
 }
 
 /* Footer Styles */
-footer {
+.wrkctg-footer {
     background-color: rgba(244, 191, 150, 0.93); /* Change the color of rectangles */
     width: 100%;
     position: absolute;
     bottom: 0;
+}
+
+.orange-rectangles {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
 }
 
 /* Main Styles */
@@ -117,7 +123,7 @@ main {
         <header>
             <div class="orange-rectangles">
                 <!-- Top and bottom orange rectangles -->
-                <img src="Images/HakiFitLogo.png" alt="Your Logo" class="logo">
+                <img src="${initParam.headerValue}" alt="Your Logo" class="logo">
             </div>
         </header>
         <main>
@@ -136,9 +142,10 @@ main {
                 </div>
             </div>
         </main>
-        <footer>
+        <footer class="wrkctg-footer">
             <div class="orange-rectangles">
                 <!-- Top and bottom orange rectangles -->
+                ${initParam.footerValue}
             </div>
         </footer>
     </div>
