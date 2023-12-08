@@ -70,6 +70,7 @@ body {
    text-align: left;
    margin-top: 30px;
    font-weight: bold;
+   top:-270px;
 }
 .wrkctg-div {
    position: relative;
@@ -81,18 +82,19 @@ body {
    border-radius: 30px;
    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
    overflow: auto;
+   top:-270px;
 }
 .wrkctg-p {
    position: relative;
    width: 400px;
    height: 70px;
-   margin: 0 auto;
    font-family: Inika, sans-serif;
    color: rgb(30, 30, 30);
-   font-size: 20px;
-   font-weight: 400;
+   font-size: 17px;
+   font-weight: 300;
    line-height: 65.15px;
-   overflow: hidden;
+   overflow: auto;
+   left:50px;
 }
 
 .wrkctg-p2 {
@@ -114,13 +116,14 @@ body {
    position: relative;
    width: 300px;
    height: 32px;
-   background: rgb(244, 191, 150);
+   background-color:#CE5A67;
    border: 3px solid rgb(0, 0, 0);
    border-radius: 30px;
    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
    overflow: auto;
    text-align: center;
    margin: 0px 0px 20px 130px;
+   top:-270px;
 }
 .wrkctg-div3 {
    position: relative;
@@ -132,6 +135,8 @@ body {
    border-radius: 30px;
    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
    overflow: auto;
+   top:-10px;
+   padding-bottom:10px;
 }
 .wrkctg-footer {
     background-color: rgba(244, 191, 150, 0.93); /* Change the color of rectangles */
@@ -150,9 +155,32 @@ body {
    height: auto;
 }
 
-.wrkctg-h1,
-.wrkctg-h4 {
-   margin-top: 30px;
+.h1{
+     color: black;
+     font-size: 36px;
+     text-align:center;
+     margin-top:90px
+}
+
+.description{
+    text-align:center; 
+    padding-bottom:10px;
+}
+
+.wrkctg-h5{
+      position: relative;
+        width: 350px;
+        height: 119px;
+        left:890px;
+        top:30px;
+        font-family: Inika, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+          "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+          "Source Han Sans CN", sans-serif;
+        color: #1e1e1e;
+        font-size: 35px;
+        font-weight: bold;
+        line-height: 91.21px;
 }
 
 </style>
@@ -166,9 +194,11 @@ body {
     
     if(session.getAttribute("username")==null && session.getAttribute("password")==null)
     {
+        response.sendRedirect("HakiFit_Login");
         response.sendRedirect("HakiFit_Login.jsp");
     }
 %>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -187,23 +217,28 @@ body {
             <form action="Logout"><button type="submit"><img class="wrkctg-logout" src="Images/shutdown.png"></button></form>
         </header>
         
+        <h1 class="h1">HakiFit Track Progess!!</h1>   
+        <p  class="description">Let's see how far you have accomplish</p> 
+        <h4 class="wrkctg-h5">Day 1/2/23</h4> 
+        
+            
         <h4 class="wrkctg-h1">Progress!!</h4>  
         <div class="wrkctg-div">
-            <p class="wrkctg-p">Day 1/2/23 Strength </p>
-            <p class="wrkctg-p">Day 1/9/23 Yoga</p>
-            <p class="wrkctg-p">Day 1/16/23 Push-ups</p>
-            <p class="wrkctg-p">Day 1/23/23 Squats</p>
-            <p class="wrkctg-p">Day 2/1/23 Yoga</p>
-           <p class="wrkctg-p">Day 2/8/23 Bicep Curls</p>
-            <p class="wrkctg-p">Day 2/15/23 Squats</p> 
-            <p class="wrkctg-p">Day 2/22/23 Push-ups</p> 
-            <p class="wrkctg-p">Day 3/1/23 Strength</p><br>
+            <p class="wrkctg-p">Day 1/2/23: Strength </p>
+            <p class="wrkctg-p">Day 1/9/23: Yoga</p>
+            <p class="wrkctg-p">Day 1/16/23: Push-ups</p>
+            <p class="wrkctg-p">Day 1/23/23: Squats</p>
+            <p class="wrkctg-p">Day 2/1/23: Yoga</p>
+           <p class="wrkctg-p">Day 2/8/23: Bicep Curls</p>
+            <p class="wrkctg-p">Day 2/15/23: Squats</p> 
+            <p class="wrkctg-p">Day 2/22/23: Push-ups</p> 
+            <p class="wrkctg-p">Day 3/1/23: Strength</p><br>
             
         </div>
         
         <div class="wrkctg-div2"><a href ="HakiFit_Profile_TrackProgress.jsp">Reload</a></div>
+       
         
-        <h4 class="wrkctg-h4">Day 1/2/23</h4>   
         <div class="wrkctg-div3"> 
             <p class="wrkctg-p2">Category: Strength </p>
             <p class="wrkctg-p2">Exercise: Push-ups</p>
