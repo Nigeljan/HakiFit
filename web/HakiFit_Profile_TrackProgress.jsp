@@ -166,7 +166,7 @@ body {
     
     if(session.getAttribute("username")==null && session.getAttribute("password")==null)
     {
-        response.sendRedirect("HakiFit_Login");
+        response.sendRedirect("HakiFit_Login.jsp");
     }
 %>
 <!DOCTYPE html>
