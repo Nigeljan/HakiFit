@@ -165,11 +165,10 @@ button {
     </head>
     <body class="wrkctg-body">
         <header class="wrkctg-header">
-            <a href="HakiFit.jsp"><img class="wrkctg-hakifitlogo"  src="${initParam.headerValue}"/></a>
-            <a href="WorkoutCategories.jsp">Workouts</a>
-            <a href="PersonalWorkout.jsp">Personal Workout</a>
-            <a href="Nutrition.jsp">Nutrition</a>
-            <a href="Profile.jsp">Profile</a>
+            <a href="HakiFit_MainPage.jsp"><img class="wrkctg-hakifitlogo" src="${initParam.headerValue}"/></a>
+            <a href="HakiFit_WorkoutCategories.jsp">Workouts</a>
+            <a href="HakiFit_Nutrients_List.jsp">Nutrition</a>
+            <a href="HakiFit_Profile.jsp">Profile</a>
             <a href="HakiFit_Login.jsp"><img class="wrkctg-logout" src="Images/shutdown.png"></a>
         </header>
 
