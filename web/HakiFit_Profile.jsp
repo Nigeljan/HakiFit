@@ -1,9 +1,3 @@
-<%-- 
-    Document   : Profile
-    Created on : 12 2, 23, 3:33:39 PM
-    Author     : Nigel Jan Naniong
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -182,21 +176,21 @@
         <div class="wrkctg-div">
             <span class="wrkctg-span1">
                 <button type="submit">
-                    <a href="Post-WorkoutFeedback.jsp">
-                        <img src="Images/View Metrics.png"  class="wrkctg-highknees"><p class="wrkctg-highkneesp">View Metrics
+                    <a href="HakiFit_Profile_Metric.jsp">
+                        <img src="Images/Metrics.png"  class="wrkctg-highknees"><p class="wrkctg-highkneesp">View Metrics
                         </p></a></button>
             </span>
 
             <span class="wrkctg-span2">
                 <button type="submit">
-                    <a href="SetGoals.jsp">
+                    <a href="HakiFit_Profile_SetGoals.jsp">
                         <img src="Images/Set Goals.jpg" class="wrkctg-squatjumps"><br><p class="wrkctg-highkneesp">Set Goals</p>
                     </a></button>
             </span>
 
             <span class="wrkctg-span3">
                 <button type="submit">
-                    <a href="Post-WorkoutFeedback.jsp">
+                    <a href="HakiFit_Profile_TrackProgress.jsp">
                         <img src="Images/Views History.png" class="wrkctg-jogging"><br><p class="wrkctg-highkneesp">View History</p>
                     </a></button>
             </span>
